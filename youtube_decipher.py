@@ -20,6 +20,7 @@ import string_utils
 
 # reversed-engineered from the decipher function on youtube's html5 video player at
 # https://www.youtube.com/s/player/38c5f870/player_ias.vflset/en_US/base.js
+# works as of March 2021
 def __Uu_Zo(a, b):
 	# var c = a[0];
 	# a[0] = a[b % a.length];

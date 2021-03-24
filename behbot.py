@@ -60,11 +60,6 @@ class DiscordBot(discord.Client):
 					try:
 						search_result = youtube_search.getYoutubeSearchResults(value.replace(' ', '+'))						
 						if len(search_result) > 0:
-							# Currently "protected" videos cannot be played as the video files is not scraped
-							# by youtube_video.py
-							#
-							# Temporary fix: loop through the search results to find playable
-							# videos and skip "protected" videos
 							for i in range(0, len(search_result)):
 								try:
 									# Get the 'top' most result since it is (usually) the most relevant
