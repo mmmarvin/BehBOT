@@ -82,6 +82,8 @@ class DiscordBot(discord.Client):
 						return
 					
 					if video_info != None and len(video_info.title) and len(video_info.videoSource) > 0:
+						# Fix from user Mr_Spaar at https://stackoverflow.com/questions/61959495/when-playing-audio-the-last-part-is-cut-off-how-can-this-be-fixed-discord-py
+						# Accessed March 2021
 						FFMPEG_OPTS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
 						
 						print("Getting video from source {0}...".format(video_info.originalVideoSource))
@@ -113,6 +115,8 @@ class DiscordBot(discord.Client):
 						return
 						
 					if len(video_information.title)> 0:
+						# Fix from user Mr_Spaar at https://stackoverflow.com/questions/61959495/when-playing-audio-the-last-part-is-cut-off-how-can-this-be-fixed-discord-py
+						# Accessed March 2021
 						FFMPEG_OPTS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
 						
 						await message.channel.send("Playing: \"{0}\"".format(video_information.title))
