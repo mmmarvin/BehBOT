@@ -5,6 +5,9 @@ Discord BOT that plays music
 !play [title] - plays music <br>
 !stop - stops the last played music
 
+# Installation
+create an .env file and add the token DISCORD_TOKEN with the value of the discord BOT token
+
 # Modules
 * behbot.py - Discord bot module
 * youtube_decipher.py - module that deciphers encrypted youtube video URLs 
@@ -14,6 +17,7 @@ Discord BOT that plays music
 # Library Prerequisites
 * requests
 * urllib
+* dotenv
 * discord.py
 
 # Author
