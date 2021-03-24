@@ -11,7 +11,7 @@ create an .env file and add the token DISCORD_TOKEN with the value of the discor
 # Modules
 * behbot.py - Discord bot module
 * youtube_decipher.py - module that deciphers encrypted youtube video URLs 
-* youtube_search.py - module that scrapes youtube search result
+* youtube_search.py - module that scrapes youtube search result information
 * youtube_video.py - module that scrapes youtube video information
 
 # Library Prerequisites
