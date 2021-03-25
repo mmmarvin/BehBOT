@@ -13,7 +13,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with BehBOT.  If not, see <https://www.gnu.org/licenses/>.
+# along with BehBOT. If not, see <https://www.gnu.org/licenses/>.
 ########################
 import os
 import discord
